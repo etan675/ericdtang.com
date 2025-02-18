@@ -18,7 +18,7 @@ const TopNavbar = ({ className = '' }: Props) => {
     
     return (
         <header className={classNames(
-            'flex flex-col px-12 pt-6 text-xl font-semibold',
+            'flex flex-col px-12 pt-6 text-xl font-semibold min-w-[830px]',
             className
         )}>
             <div className='flex justify-between'>

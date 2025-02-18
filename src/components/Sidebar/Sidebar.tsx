@@ -10,7 +10,7 @@ import LinkedInIcon from '../svg-components/LinkedInIcon';
 const Sidebar = () => {
     return (
         <div className='w-80 bg-[#272727]'>
-            <Content className='flex flex-col gap-4'>
+            <Content className='flex flex-col gap-4 px-12'>
                 <SidebarSection title='Intro'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </SidebarSection>
@@ -22,7 +22,7 @@ const Sidebar = () => {
                             <EmailIcon className='w-[1.5em] h-[1.5em] items-center justify-self-center' />
                             <Link
                                 className='hover:underline'
-                                href=''
+                                href='mailto:erictang1201@gmail.com'
                                 target='_blank'
                             >
                                 erictang1201@gmail.com

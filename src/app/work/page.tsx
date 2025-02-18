@@ -1,9 +1,18 @@
+import PageContentContainer from '@/components/layouts/PageContentContainer';
+import PageHeading from '@/components/layouts/PageHeading';
+import PageSection from '@/components/layouts/PageSection';
 import React from 'react';
 
 const Page = () => {
     return (
-        <main>
-            Work page
+        <main className="flex-grow flex justify-center">
+             <PageContentContainer>
+                <PageSection>
+                    <PageHeading>
+                        Work page
+                    </PageHeading>
+                </PageSection>
+            </PageContentContainer>
         </main>
     )
 };
