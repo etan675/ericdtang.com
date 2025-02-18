@@ -2,19 +2,16 @@ import classNames from 'classnames';
 import React from 'react';
 
 type Props = Readonly<{
-    children: React.ReactNode,
     className?: string
 }>;
 
-const Content = ({ children, className = '' }: Props) => {
+const Divider = ({ className = '' }: Props) => {
     return (
         <div className={classNames(
-            'mx-12',
+            'border-b border-gray-600 w-full my-4',
             className
-        )}>
-            {children}
-        </div>
+        )}></div>
     )
 };
 
-export default Content;
+export default Divider;

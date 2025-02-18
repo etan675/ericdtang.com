@@ -4,14 +4,23 @@ import { usePathname } from 'next/navigation';
 import React from 'react';
 import NavbarLink from './NavbarLink';
 import Link from 'next/link';
-import GithubIcon from './svg-components/GithubIcon';
+import GithubIcon from '../svg-components/GithubIcon';
+import classNames from 'classnames';
+import Divider from '../layouts/Divider';
 
-const TopNavbar = () => {
+type Props = Readonly<{
+    className?: string,
+}>;
+
+const TopNavbar = ({ className = '' }: Props) => {
     const pathname = usePathname();
     const rootRoute = pathname.split('/')[1];
     
     return (
-        <header className='flex flex-col gap-4 px-12 pt-6 pb-4 text-xl'>
+        <header className={classNames(
+            'flex flex-col px-12 pt-6 text-xl font-semibold',
+            className
+        )}>
             <div className='flex justify-between'>
                 <Link href='/' className='hover:underline hover:decoration-solid cursor-pointer'>
                     Eric Tang
@@ -47,12 +56,12 @@ const TopNavbar = () => {
                     >
                         Blog
                     </NavbarLink>
-                    <Link href='https://github.com/etan675'>
+                    <Link href='https://github.com/etan675' target='_blank'>
                         <GithubIcon className='w-[1.2em] h-[1.2em]' fill='#939393'/>
                     </Link>
                 </div>
             </div>
-            <div className='border-b border-gray-600 w-full'></div>
+            <Divider/>
         </header>
     )
 };
