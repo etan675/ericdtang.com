@@ -14,8 +14,8 @@ const NavbarLink = ({ href, children, className = '', isActive = false }: Props)
         <Link
             href={href}
             className={classNames(
-                'hover:text-indigo-400 transition-all',
-                { 'text-indigo-400': isActive },
+                'hover:text-[var(--secondary)] transition-all',
+                { 'text-[var(--secondary)]': isActive },
                 className
             )}
         >

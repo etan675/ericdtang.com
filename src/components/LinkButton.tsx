@@ -15,9 +15,9 @@ const LinkButton = ({ href, children, className = '' }: Props) => {
             className={classNames(
                 'w-fit text-base text-[var(--foreground)] bg-[#2E2E2E]',
                 'py-2 px-4 rounded-lg border border-stone-600',
-                'hover:text-indigo-400 hover:border-indigo-400 transition-all',
+                'hover:text-[var(--secondary)] hover:border-[var(--secondary)] transition-all',
                 'relative before:absolute before:inset-[-2px] before:border-2 before:rounded-lg',
-                'before:border-transparent before:transition-all hover:before:border-indigo-400',
+                'before:border-transparent before:transition-all hover:before:border-[var(--secondary)]',
                 className
             )}
         >

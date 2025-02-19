@@ -16,7 +16,7 @@ const SidebarSection = ({ className = '', title, children }: Props) => {
             <h2 className="text-xl font-semibold text-[var(--foreground)]">
                 {title}
             </h2>
-            <div className="text-[#C2C2C2]">
+            <div className="text-[var(--text-secondary)]">
                 {children}
             </div>
         </div>

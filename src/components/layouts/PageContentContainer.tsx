@@ -11,7 +11,7 @@ const PageContentContainer = ({ children, className = '' }: Props) => {
     return (
         <Content className={classNames(
             'w-[75%] flex flex-col gap-12 items-start',
-            'text-lg text-[#C2C2C2]',
+            'text-lg text-[var(--text-secondary)]',
             className
         )}>
             {children}
