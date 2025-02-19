@@ -3,6 +3,7 @@ import LinkButton from "@/components/LinkButton";
 import PageContentContainer from '@/components/layouts/PageContentContainer';
 import PageSection from '@/components/layouts/PageSection';
 import PageHeading from '@/components/layouts/PageHeading';
+import Link from 'next/link';
 
 const Home = () => {
   return (
@@ -10,15 +11,26 @@ const Home = () => {
       <PageContentContainer>
         <PageSection>
           <PageHeading>Hello.</PageHeading>
+          <div>
+            <span>
+              I&apos;m Eric, a full stack engineer working in the web space.
+              For the past 3 years, I&apos;ve been developing web apps using JavaScript, 
+              PHP, and&nbsp;
+            </span>
+            <Link className='text-[var(--secondary)] hover:underline' href='/about'>related technologies</Link>
+            <span>.</span>
+            <p>My goal in tech is to build elegant and empowering software for the people.</p>
+          </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Outside of work, I have a passion for golf and fitness. 
+            When I&apos;m not at my computer, you&apos;ll usually find me at the gym
+            or working on my short game &#x26F3;.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Lorem ipsum dolor sit amet.
+            This site is an overview of who I am. Here, I will talk about things I&apos;m 
+            interested in and share my projects. Welcome!
           </p>
-          <LinkButton href="/about">Learn More</LinkButton>
+          <LinkButton className='mt-2' href="/about">More About Me</LinkButton>
         </PageSection>
       </PageContentContainer>
     </main>

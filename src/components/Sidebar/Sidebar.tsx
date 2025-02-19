@@ -12,18 +12,19 @@ const Sidebar = () => {
         <div className='w-80 bg-[#272727]'>
             <Content className='flex flex-col gap-4 px-12'>
                 <SidebarSection title='Intro'>
-                    <div>
-                        <span>I&apos;m </span>
+                    <p>
+                        <span>I&apos;m&nbsp;</span>
                         <span className="font-medium text-[var(--foreground)]">Eric</span>
-                        <span>, a software engineer and web developer. Welcome to my digital space &#x1F3A7;.</span>
-                    </div>
+                        <span>, a software engineer and web developer. Welcome to my digital space&nbsp;</span>
+                        <span className='text-[1.2em]'>&#x1F3A7;.</span>
+                    </p>
                 </SidebarSection>
                 <Divider />
                 <SidebarSection title='Get in touch'>
                     <div className='flex flex-col gap-4'>
                         <div>
-                            <p>If you find something interesting and would like to reach out or learn more, </p>
-                            <p className="font-medium text-[var(--foreground)]">here&apos;s where to find me:</p>
+                            <p>If you find something interesting and would like to reach out or learn more,&nbsp;</p>
+                            <p className="font-medium text-[var(--foreground)]">here&apos;s where to find me.</p>
                         </div>
                         <div className='grid grid-cols-[min-content_1fr] grid-rows-3 gap-1 text-[var(--secondary)]'>
                             <EmailIcon className='w-[1.5em] h-[1.5em] items-center justify-self-center' />
