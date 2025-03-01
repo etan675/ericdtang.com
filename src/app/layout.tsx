@@ -29,8 +29,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-hidden flex`}
       >
-        <TopNavbar className="fixed w-full bg-black bg-opacity-20 top-0" />
-        <Sidebar />
+        <TopNavbar/>
+        <Sidebar className="basis-[25%]" />
         {children}
       </body>
     </html>

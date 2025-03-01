@@ -6,17 +6,25 @@ import Link from 'next/link';
 import EmailIcon from '../svg-components/EmailIcon';
 import GithubIcon from '../svg-components/GithubIcon';
 import LinkedInIcon from '../svg-components/LinkedInIcon';
+import classNames from 'classnames';
 
-const Sidebar = () => {
+type Props = Readonly<{
+    className?: string,
+}>;
+
+const Sidebar = ({ className = '' }: Props) => {
     return (
-        <div className='w-80 bg-[#272727]'>
-            <Content className='flex flex-col gap-4 px-12'>
+        <div className={classNames(
+            'flex flex-col items-end bg-[#272727] overflow-auto',
+            className
+        )}>
+            <Content className='w-72 flex flex-col gap-4 px-8'>
                 <SidebarSection title='Intro'>
                     <p>
                         <span>I&apos;m&nbsp;</span>
                         <span className="font-medium text-[var(--foreground)]">Eric</span>
-                        <span>, a software engineer and web developer. Welcome to my digital space&nbsp;</span>
-                        <span className='text-[1.2em]'>&#x1F3A7;.</span>
+                        <span>, a web developer and software engineer. Welcome to my digital space.&nbsp;</span>
+                        <span className='text-[1.2em]'>&#x1F3A7;</span>
                     </p>
                 </SidebarSection>
                 <Divider />
@@ -24,7 +32,7 @@ const Sidebar = () => {
                     <div className='flex flex-col gap-4'>
                         <div>
                             <p>If you find something interesting and would like to reach out or learn more,&nbsp;</p>
-                            <p className="font-medium text-[var(--foreground)]">here&apos;s where to find me.</p>
+                            <p className="font-medium mt-1 text-[var(--foreground)]">here&apos;s where to find me:</p>
                         </div>
                         <div className='grid grid-cols-[min-content_1fr] grid-rows-3 gap-1 text-[var(--secondary)]'>
                             <EmailIcon className='w-[1.5em] h-[1.5em] items-center justify-self-center' />

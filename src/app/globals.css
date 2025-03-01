@@ -3,24 +3,23 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #1F1F1F;
+  --foreground: #F9F9F9;
 
   /* similar to tailwind indigo-400 */
   --secondary: #818cf8;
   /* soft contrast */
   --secondary-soft: #ac9cdb;
   /* high contrast with indigo */
-  --secondary-contrast: #d0b208;
-
-  --text-secondary: var(--foreground);
+  --secondary-contrast: #B8860B;
+  
+  --text-secondary: #C2C2C2;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #1F1F1F;
     --foreground: #F9F9F9;
-    --text-secondary: #C2C2C2;
   }
 
   ::selection {
