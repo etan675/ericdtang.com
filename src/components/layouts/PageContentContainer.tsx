@@ -10,7 +10,7 @@ type Props = Readonly<{
 const PageContentContainer = ({ children, className = '' }: Props) => {
     return (
         <Content className={classNames(
-            'w-[75%] flex flex-col gap-12 items-start',
+            'w-[75%] flex flex-col gap-12 items-start flex-grow',
             'text-lg text-[var(--text-secondary)]',
             className
         )}>

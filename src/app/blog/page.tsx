@@ -5,15 +5,13 @@ import React from 'react';
 
 const BlogPage = () => {
     return (
-        <main className="flex-grow flex justify-center">
-            <PageContentContainer>
-                <PageSection>
-                    <PageHeading>
-                        Blog page
-                    </PageHeading>
-                </PageSection>
-            </PageContentContainer>
-        </main>
+        <PageContentContainer>
+            <PageSection>
+                <PageHeading>
+                    Blog page
+                </PageHeading>
+            </PageSection>
+        </PageContentContainer>
     )
 };
 

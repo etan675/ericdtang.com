@@ -18,8 +18,8 @@ const TopNavbar = ({ className = '' }: Props) => {
     
     return (
         <header className={classNames(
-            'flex flex-col px-12 pt-6 text-xl font-semibold min-w-[830px]',
-            'fixed top-0 w-full bg-black bg-opacity-20 z-50 backdrop-blur-md',
+            'flex flex-col px-12 pt-6 text-xl font-semibold w-screen',
+            'fixed top-0 left-0 bg-black bg-opacity-20 z-50 backdrop-blur-md',
             className
         )}>
             <div className='flex justify-between'>
@@ -51,12 +51,12 @@ const TopNavbar = ({ className = '' }: Props) => {
                     >
                         Projects
                     </NavbarLink>
-                    {/* <NavbarLink 
+                    <NavbarLink 
                         href='/blog'
                         isActive={rootRoute === 'blog'}
                     >
                         Blog
-                    </NavbarLink> */}
+                    </NavbarLink>
                     <Link href='https://github.com/etan675' target='_blank'>
                         <GithubIcon className='w-[1.2em] h-[1.2em]' fill='#939393'/>
                     </Link>

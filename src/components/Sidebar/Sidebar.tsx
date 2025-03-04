@@ -2,11 +2,11 @@ import React from 'react';
 import Content from '../layouts/Content';
 import SidebarSection from './SidebarSection';
 import Divider from '../layouts/Divider';
-import Link from 'next/link';
 import EmailIcon from '../svg-components/EmailIcon';
 import GithubIcon from '../svg-components/GithubIcon';
 import LinkedInIcon from '../svg-components/LinkedInIcon';
 import classNames from 'classnames';
+import LinkText from '../LinkText';
 
 type Props = Readonly<{
     className?: string,
@@ -15,7 +15,7 @@ type Props = Readonly<{
 const Sidebar = ({ className = '' }: Props) => {
     return (
         <div className={classNames(
-            'flex flex-col items-end bg-[#272727] overflow-auto',
+            'min-w-[300px] flex flex-col items-end bg-[#272727] overflow-auto',
             className
         )}>
             <Content className='w-72 flex flex-col gap-4 px-8'>
@@ -34,31 +34,28 @@ const Sidebar = ({ className = '' }: Props) => {
                             <p>If you find something interesting and would like to reach out or learn more,&nbsp;</p>
                             <p className="font-medium mt-1 text-[var(--foreground)]">here&apos;s where to find me:</p>
                         </div>
-                        <div className='grid grid-cols-[min-content_1fr] grid-rows-3 gap-1 text-[var(--secondary)]'>
+                        <div className='grid grid-cols-[min-content_1fr] grid-rows-3 gap-1'>
                             <EmailIcon className='w-[1.5em] h-[1.5em] items-center justify-self-center' />
-                            <Link
-                                className='hover:underline'
+                            <LinkText
                                 href='mailto:erictang1201@gmail.com'
                                 target='_blank'
                             >
                                 erictang1201@gmail.com
-                            </Link>
-                            <GithubIcon className='w-[1.2em] h-[1.2em] items-center justify-self-center' fill='#d1d1d1' />
-                            <Link
-                                className='hover:underline'
-                                href='https://github.com/etan675'
-                                target='_blank'
-                            >
-                                etan675
-                            </Link>
+                            </LinkText>
                             <LinkedInIcon className='w-[1.5em] h-[1.5em] items-center justify-self-center' />
-                            <Link
-                                className='hover:underline'
+                            <LinkText
                                 href='https://linkedin.com/in/eric-tang99'
                                 target='_blank'
                             >
                                 eric-tang99
-                            </Link>
+                            </LinkText>
+                            <GithubIcon className='w-[1.2em] h-[1.2em] items-center justify-self-center' fill='#d1d1d1' />
+                            <LinkText
+                                href='https://github.com/etan675'
+                                target='_blank'
+                            >
+                                etan675
+                            </LinkText>
                         </div>
                     </div>
                 </SidebarSection>

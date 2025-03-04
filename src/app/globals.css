@@ -10,8 +10,10 @@
   --secondary: #818cf8;
   /* soft contrast */
   --secondary-soft: #ac9cdb;
-  /* high contrast with indigo */
+  /* high contrast with above indigo */
   --secondary-contrast: #B8860B;
+  /* lighter version */
+  --secondary-light: #b3bafe;
   
   --text-secondary: #C2C2C2;
 }

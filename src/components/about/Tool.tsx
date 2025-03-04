@@ -18,11 +18,13 @@ type Props = Readonly<{
     type: keyof typeof tools
 }>;
 
+// TODO: quick popup desc on hover
 const Tool = ({ className = '', type }: Props) => {
     return (
         <div className={classNames(
-            'flex items-center gap-2 p-2 bg-slate-900',
+            'flex items-center gap-2 px-3 py-4 bg-slate-900 rounded-md',
             '[&>svg]:w-8 [&>svg]:h-8 [&>svg]:flex-shrink-0',
+            'cursor-pointer border border-transparent hover:border-[var(--secondary)] transition-all',
             className
         )}>
             {tools[type].icon}

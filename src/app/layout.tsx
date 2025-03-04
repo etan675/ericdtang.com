@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import TopNavbar from "@/components/TopNavbar/TopNavbar";
 import Sidebar from "@/components/Sidebar/Sidebar";
+import PageLayout from "@/components/layouts/PageLayout";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,11 +28,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-hidden flex`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-y-hidden flex`}
       >
         <TopNavbar/>
-        <Sidebar className="basis-[25%]" />
-        {children}
+        <Sidebar className="basis-[25%] shrink-0" />
+        <PageLayout>
+          {children}
+        </PageLayout>
       </body>
     </html>
   );
