@@ -5,8 +5,8 @@ import React from 'react';
 import FooterGrid from './FooterGrid';
 import FooterTitle from './FooterTitle';
 import FooterColDiv from './FooterColDiv';
-import FooterLink from './FooterLink';
 import { usePathname } from 'next/navigation';
+import LinkText from '@/components/LinkText';
 
 type Props = Readonly<{
     className?: string,
@@ -27,58 +27,72 @@ const PageFooter = ({ className = '' }: Props) => {
         >
             <FooterGrid>
                 <div className='flex flex-col'>
-                    <FooterTitle>Contact Info:</FooterTitle>
-                    <div className='flex flex-wrap gap-[0.5em]'>
-                        <FooterLink
-                            href='mailto:erictang1201@gmail.com'
-                            target='_blank'
-                        >
-                            Email
-                        </FooterLink>
-                        |
-                        <FooterLink
-                            href='https://linkedin.com/in/eric-tang99'
-                            target='_blank'>
-                            LinkedIn
-                        </FooterLink>
-                        |
-                        <FooterLink
-                            href='https://github.com/etan675'
-                            target='_blank'
-                        >
-                            GitHub
-                        </FooterLink>
-                    </div>
-                </div>
-                <FooterColDiv />
-                <div className='flex flex-col'>
                     <FooterTitle>Read Next:</FooterTitle>
                     {nextPage && (
-                        <FooterLink href={`/${nextPage.path}`}>{nextPage.label} &rarr;</FooterLink>
+                        <LinkText
+                            href={`/${nextPage.path}`}
+                            className='text-indigo-300'
+                        >
+                            {nextPage.label} &rarr;
+                        </LinkText>
                     )}
-                    <FooterLink href='/blog'>Blog &rarr;</FooterLink>
+                    <LinkText
+                        href='/blog'
+                        className='text-indigo-300'
+                    >
+                        Blog &rarr;
+                    </LinkText>
                 </div>
-                <FooterColDiv />
+                <FooterColDiv/>
+                <div className='flex flex-col'>
+                    <FooterTitle>Contact Info:</FooterTitle>
+                    <div className='flex flex-wrap gap-[0.5em]'>
+                        <LinkText
+                            href='mailto:erictang1201@gmail.com'
+                            target='_blank'
+                            className='text-slate-50'
+                        >
+                            Email
+                        </LinkText>|
+                        <LinkText
+                            href='https://linkedin.com/in/eric-tang99'
+                            target='_blank'
+                            className='text-slate-50'
+                        >
+                            LinkedIn
+                        </LinkText>|
+                        <LinkText
+                            href='https://github.com/etan675'
+                            target='_blank'
+                            className='text-slate-50'
+                        >
+                            GitHub
+                        </LinkText>
+                    </div>
+                </div>
+                <FooterColDiv/>
                 <div className='flex flex-col'>
                     <FooterTitle>Tech Stack & Design:</FooterTitle>
                     <ul className='list-disc pl-[1em]'>
                         <li>
-                            Built with Next.js, React, and Tailwind - &#8203;
-                            <FooterLink
+                            <span>Built with Next.js, React, and Tailwind - </span>
+                            <LinkText
+                                className='text-slate-50'
                                 href='https://github.com/etan675/my-website'
                                 target='_blank'
                             >
                                 Source
-                            </FooterLink>
+                            </LinkText>
                         </li>
                         <li>
                             <span>Design inspired by </span>
-                            <FooterLink
+                            <LinkText
+                                className='text-slate-50'
                                 href='https://www.taniarascia.com/'
                                 target='_blank'
                             >
                                 Tania Rascia&apos;s
-                            </FooterLink> personal website
+                            </LinkText> personal website
                         </li>
                     </ul>
                 </div>

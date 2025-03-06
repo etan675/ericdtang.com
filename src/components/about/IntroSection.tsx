@@ -29,9 +29,9 @@ const IntroSection = ({ className = '' }: Props) => {
             className
         )}>
             <p>
-                I&apos;m Eric, a software engineer. I want to build the kind of products that 
-                makes both users and engineers happy, as good software should feel great to use
-                and even better to work on.
+                As a software engineer, I want to build the kind of products that makes 
+                both users and engineers happy. I believe that good software should feel 
+                great to use and even better to work on.
             </p>
             <div>
                 <p>When it comes to my work, I try to always keep 3 things in mind: </p>
@@ -58,8 +58,8 @@ const IntroSection = ({ className = '' }: Props) => {
             </div>
             <p>
                 For developers, constant innovation by the bright minds of our industry creates an
-                endless stream of new information, and since we must continuously learn to stay effective,
-                it is easy to get lost. I find that having a few&nbsp;
+                endless stream of new information, and since we must continuously learn and adapt to stay effective,
+                it is easy to feel lost. I find that having a few&nbsp;
                 <span
                     className='cursor-pointer text-[var(--secondary)] hover:underline'
                     onClick={highLightText}
