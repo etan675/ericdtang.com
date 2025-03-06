@@ -27,7 +27,7 @@ const Sidebar = ({ className = '' }: Props) => {
                         <span className='text-[1.2em]'>&#x1F3A7;</span>
                     </p>
                 </SidebarSection>
-                <Divider />
+                <Divider/>
                 <SidebarSection title='Get in touch'>
                     <div className='flex flex-col gap-4'>
                         <div>
@@ -59,7 +59,14 @@ const Sidebar = ({ className = '' }: Props) => {
                         </div>
                     </div>
                 </SidebarSection>
-                <Divider />
+                <Divider/>
+                <SidebarSection>
+                    <p>
+                        <q className='italic'>Simplicity is the ultimate sophistication.</q>&nbsp;
+                        <span> - </span> 
+                        <span className='text-sm'>Leonardo da Vinci</span> 
+                    </p>
+                </SidebarSection>
             </Content>
         </div>
     )

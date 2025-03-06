@@ -31,7 +31,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-y-hidden flex`}
       >
         <TopNavbar/>
-        <Sidebar className="basis-[25%] shrink-0" />
+        <Sidebar className="basis-[20%] shrink-0" />
         <PageLayout>
           {children}
         </PageLayout>

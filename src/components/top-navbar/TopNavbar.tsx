@@ -6,7 +6,6 @@ import NavbarLink from './NavbarLink';
 import Link from 'next/link';
 import GithubIcon from '../svg-components/GithubIcon';
 import classNames from 'classnames';
-import Divider from '../layouts/Divider';
 
 type Props = Readonly<{
     className?: string,
@@ -18,8 +17,8 @@ const TopNavbar = ({ className = '' }: Props) => {
     
     return (
         <header className={classNames(
-            'flex flex-col px-12 pt-6 text-xl font-semibold w-screen',
-            'fixed top-0 left-0 bg-black bg-opacity-20 z-50 backdrop-blur-md',
+            'flex flex-col px-12 py-6 text-xl font-semibold w-screen',
+            'fixed top-0 left-0 bg-black bg-opacity-20 z-50 backdrop-blur-md border-b border-gray-600',
             className
         )}>
             <div className='flex justify-between'>
@@ -62,7 +61,6 @@ const TopNavbar = ({ className = '' }: Props) => {
                     </Link>
                 </div>
             </div>
-            <Divider/>
         </header>
     )
 };

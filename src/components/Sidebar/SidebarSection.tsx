@@ -3,19 +3,21 @@ import React from 'react';
 
 type Props = Readonly<{
     className?: string,
-    title: string,
+    title?: string,
     children: React.ReactNode
 }>;
 
-const SidebarSection = ({ className = '', title, children }: Props) => {
+const SidebarSection = ({ className = '', title = '', children }: Props) => {
     return (
         <div className={classNames(
             'flex flex-col gap-4',
             className
         )}>
-            <h2 className="text-xl font-semibold text-[var(--foreground)]">
-                {title}
-            </h2>
+            {title && (
+                <h2 className="text-xl font-semibold text-[var(--foreground)]">
+                    {title}
+                </h2>
+            )}
             <div className="text-[var(--text-secondary)]">
                 {children}
             </div>
