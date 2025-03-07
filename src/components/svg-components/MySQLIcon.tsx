@@ -6,7 +6,7 @@ type Props = Readonly<{
 
 const MySQLIcon = ({ className = '' }: Props) => {
     return (
-        <svg className={className} width="64px" height="64px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+        <svg className={className} width="64px" height="64px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill='#2499b3'>
 
             <g id="SVGRepo_bgCarrier" strokeWidth="0" />
 

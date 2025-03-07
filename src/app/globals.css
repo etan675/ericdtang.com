@@ -16,6 +16,7 @@
   --secondary-light: #b3bafe;
   
   --text-secondary: #C2C2C2;
+  --text-tertiary: #919191;
 }
 
 @media (prefers-color-scheme: dark) {

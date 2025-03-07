@@ -34,7 +34,7 @@ const IntroSection = ({ className = '' }: Props) => {
                 great to use and even better to work on.
             </p>
             <div>
-                <p>When it comes to my work, I try to always keep 3 things in mind: </p>
+                <p>When it comes to my work, I always try to keep 3 things in mind: </p>
                 <p>
                     <span className={classNames(
                         'italic transition-all',

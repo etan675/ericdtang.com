@@ -26,6 +26,12 @@ const MyTools = ({ className = '' }: Props) => {
             </div>
             <div className='relative'>
                 <Tool
+                    type='REACT'
+                    className='hover:absolute hover:top-0 hover:left-0 hover:scale-105 w-full' 
+                />
+            </div>
+            <div className='relative'>
+                <Tool
                     type='CSS'
                     className='hover:absolute hover:top-0 hover:left-0 hover:scale-105 w-full' 
                 />
@@ -33,12 +39,6 @@ const MyTools = ({ className = '' }: Props) => {
             <div className='relative'>
                 <Tool
                     type='TW'
-                    className='hover:absolute hover:top-0 hover:left-0 hover:scale-105 w-full' 
-                />
-            </div>
-            <div className='relative'>
-                <Tool
-                    type='REACT'
                     className='hover:absolute hover:top-0 hover:left-0 hover:scale-105 w-full' 
                 />
             </div>

@@ -21,7 +21,7 @@ const AboutPage = () => {
                     and Psychology at University of Auckland. During my second year, 
                     I took a class called &#8203;
                     <span className='italic'>Object-Oriented Software Development</span>
-                    . The lecturer engaged the class by using real-life analogies to explain coding concepts 
+                    , where the lecturer used real-life analogies to explain coding concepts 
                     like objects, interfaces, and design patterns&mdash;which immediately clicked with me. 
                     I began to understand what software was really about and thought 
                     “Oh, maybe I can do this in the future”.
@@ -117,9 +117,9 @@ const AboutPage = () => {
                     <li>
                         <p className='font-bold'>Equipment: </p>
                         <ul className='list-disc pl-[1em]'>
-                            <li><span className='font-bold'>Driver, 3 wood, 3 hybrid: </span>Ping G430 (R)</li>
+                            <li><span className='font-bold'>Driver, 3 wood, 3 hybrid: </span>Ping G430 Max (R)</li>
                             <li><span className='font-bold'>Irons: </span>TaylorMade P790 (4 - PW) (S)</li>
-                            <li><span className='font-bold'>Wedges: </span>TaylorMade MG4 (50°/9b, 54°/11b, 58/11b)</li>
+                            <li><span className='font-bold'>Wedges: </span>TaylorMade MG4 (50°/9b, 54°/11b, 58°/11b)</li>
                             <li><span className='font-bold'>Putter: </span>Titleist Scotty Cameron Phantom X 5.5</li>
                         </ul>
                     </li>
