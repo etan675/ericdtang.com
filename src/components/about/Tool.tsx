@@ -18,7 +18,6 @@ type Props = Readonly<{
     type: keyof typeof tools
 }>;
 
-// TODO: quick popup desc on hover
 const Tool = ({ className = '', type }: Props) => {
     return (
         <div className={classNames(
@@ -36,11 +35,11 @@ const Tool = ({ className = '', type }: Props) => {
 const tools = {
     JS: {
         name: 'JavaScript (ES6)',
-        icon: <JSIcon/>
+        icon: <JSIcon />
     },
     TS: {
         name: 'TypeScript',
-        icon: <TSIcon/>
+        icon: <TSIcon />
     },
     PHP: {
         name: 'PHP (7+)',
@@ -48,7 +47,7 @@ const tools = {
     },
     REACT: {
         name: 'React',
-        icon: <ReactIcon/>
+        icon: <ReactIcon />
     },
     NODE: {
         name: 'Node.js',
@@ -57,14 +56,14 @@ const tools = {
     NEXT_JS: {
         name: 'Next.js',
         icon: <NextJSIcon />
-    }, 
+    },
     CSS: {
         name: 'CSS/SCSS',
-        icon: <CSSIcon/>
+        icon: <CSSIcon />
     },
     TW: {
         name: 'Tailwind',
-        icon: <TailwindIcon/>
+        icon: <TailwindIcon />
     },
     LARAVEL: {
         name: 'Laravel',
@@ -72,7 +71,7 @@ const tools = {
     },
     GQL: {
         name: 'Apollo GraphQL',
-        icon: <GraphQLIcon/>
+        icon: <GraphQLIcon />
     },
     REST: {
         name: 'REST APIs',
@@ -80,7 +79,7 @@ const tools = {
     },
     MY_SQL: {
         name: 'MySQL',
-        icon: <MySQLIcon/>
+        icon: <MySQLIcon />
     },
 }
 
