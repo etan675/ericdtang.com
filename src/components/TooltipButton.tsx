@@ -1,7 +1,6 @@
 'use client'
 
-import { arrow, FloatingArrow, useClick, useDismiss, useFloating, useInteractions, useTransitionStyles } from '@floating-ui/react';
-import classNames from 'classnames';
+import { arrow, autoUpdate, FloatingArrow, useClick, useDismiss, useFloating, useInteractions, useTransitionStyles } from '@floating-ui/react';
 import React, { useRef, useState } from 'react';
 
 type Props = Readonly<{
@@ -25,6 +24,7 @@ const TooltipButton = ({
         open,
         onOpenChange: setOpen,
         middleware: [arrow({ element: arrowRef })],
+        whileElementsMounted: autoUpdate
     });
 
     const clickProps = useClick(context);
@@ -45,13 +45,13 @@ const TooltipButton = ({
 
     return (
         <>
-            <div
+            <button
                 ref={refs.setReference}
-                className={classNames('select-none', className)}
+                className={className}
                 {...getReferenceProps()}
             >
                 {children}
-            </div>
+            </button>
             {(isMounted && !disabled) && (
                 <div
                     ref={refs.setFloating}
@@ -61,7 +61,7 @@ const TooltipButton = ({
                 >
                     <div
                         style={{ ...transitionStyles }}
-                        className='bg-[var(--foreground)] rounded-md p-4 text-[var(--background)] text-sm min-w-12'
+                        className='bg-[var(--foreground)] text-[var(--background)] rounded-md p-4 min-w-12'
                     >
                         <FloatingArrow
                             ref={arrowRef}

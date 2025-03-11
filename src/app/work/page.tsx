@@ -35,7 +35,7 @@ const WorkPage = () => {
                             <WorkToolIcon label='Laravel' />
                             <WorkToolIcon label='CodeIgniter' />
                             <WorkToolIcon label='MySQL' />
-                            <WorkToolIcon label='APIs' />
+                            <WorkToolIcon label='REST APIs' />
                             <WorkToolIcon label='PHPUnit' />
                         </WorkTools>
                     </WorkItem>
@@ -54,13 +54,13 @@ const WorkPage = () => {
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <WorkTools>
                             <WorkToolIcon label='JavaScript' />
+                            <WorkToolIcon label='TypeScript' />
                             <WorkToolIcon label='React' />
                             <WorkToolIcon label='Emotion CSS' />
-                            <WorkToolIcon label='TypeScript' />
                             <WorkToolIcon label='Node.js' />
                             <WorkToolIcon label='PHP' />
                             <WorkToolIcon label='SilverStripe CMS' />
-                            <WorkToolIcon label='Apollo GraphQL' />
+                            <WorkToolIcon label='Apollo GraphQL Client' />
                             <WorkToolIcon label='MySQL' />
                             <WorkToolIcon label='PHPUnit' />
                         </WorkTools>
