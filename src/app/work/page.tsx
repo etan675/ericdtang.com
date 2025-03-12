@@ -22,7 +22,7 @@ const WorkPage = () => {
             <PageSection>
                 <PageHeading>Work Experience</PageHeading>
                 <WorkGrid>
-                    <WorkDateLabel start='May 25' end='Sep 25' />
+                    <WorkDateLabel start='May 24' end='Sep 24' />
                     <WorkItem>
                         <div>
                             <ItemTitleLink

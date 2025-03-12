@@ -13,7 +13,10 @@ const ProjectsPage = () => {
         <PageContentContainer>
             <PageSection>
                 <PageHeading>Projects</PageHeading>
-                <p></p>
+                <p>Here are some of the projects I&apos;ve made over the years, most are for fun aside from this website. I like to keep things simple and minimalistic, focusing on clean code and usability. At the end of the day, function is style, and style is function.</p>
+                <div>
+                    {/* projects grid */}
+                </div>
             </PageSection>
         </PageContentContainer>
     )
