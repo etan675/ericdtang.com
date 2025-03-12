@@ -13,11 +13,11 @@ type AnchorProps = React.AnchorHTMLAttributes<HTMLAnchorElement>
 const LinkText = (props: AnchorProps & Props) => {
     return (
         <Link
+            {...props}
             className={classNames(
                 'text-[var(--secondary)] hover:underline',
                 props.className
             )}
-            {...props}
         >
             {props.children}
         </Link>
