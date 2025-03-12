@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Eric Tang",
-  description: "Eric's Personal Website",
+  title: "Eric Tang - Home",
+  description: "Eric Tang's Personal Website",
 };
 
 export default function RootLayout({

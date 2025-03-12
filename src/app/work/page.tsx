@@ -10,6 +10,11 @@ import WorkToolIcon from '@/components/work/WorkToolIcon';
 import WorkTools from '@/components/work/WorkTools';
 import WorkDateLabel from '@/components/work/WorkDateLabel';
 import LinkText from '@/components/LinkText';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Eric Tang - Work'
+}
 
 const WorkPage = () => {
     return (
@@ -72,13 +77,13 @@ const WorkPage = () => {
                 <PageHeading>Resume</PageHeading>
                 <div className='flex flex-col items-start'>
                     <LinkText
-                        href='/assets/eric-resume.pdf'
+                        href='/assets/eric-resume-01-2025.pdf'
                         target='_blank'
                     >
                         View in browser
                     </LinkText>
                     <LinkText
-                        href='/assets/eric-resume.pdf'
+                        href='/assets/eric-resume-01-2025.pdf'
                         target='_blank'
                         download
                     >

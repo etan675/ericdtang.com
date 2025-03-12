@@ -5,7 +5,12 @@ import PageContentContainer from '@/components/layouts/PageContentContainer';
 import PageHeading from '@/components/layouts/PageHeading';
 import PageSection from '@/components/layouts/PageSection';
 import LinkButton from '@/components/LinkButton';
+import { Metadata } from 'next';
 import React from 'react';
+
+export const metadata: Metadata = {
+    title: 'Eric Tang - About'
+}
 
 const AboutPage = () => {
     return (
