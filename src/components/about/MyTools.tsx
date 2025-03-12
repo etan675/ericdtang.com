@@ -46,7 +46,7 @@ const MyTools = ({ className = '' }: Props) => {
                 className='relative'
                 content={
                     <TooltipContent>
-                        <p className='font-semibold'>Experience: 2 years</p>
+                        <p className='font-semibold'>Experience: 3 years</p>
                         <p>A JavaScript library for building complex and scalable web UIs. It combines logic and visuals into reusable UI components, making development smoother and more efficient.</p>
                     </TooltipContent>
                 }

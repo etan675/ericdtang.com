@@ -25,8 +25,8 @@ const WorkPage = () => {
                             />
                             <ItemTitleSub>Software Engineer</ItemTitleSub>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Worked on an online educational platform. Developed in-house solutions to support technical infrastructure, including a custom SDK for integrating internal apps with a popular CRM system.</p>
+                        <p>Primarily focusing on backend development, applied architectural design patterns to refactor and decouple backend layers for a robust and future-proof system.</p>
                         <WorkTools>
                             <WorkToolIcon label='JavaScript' />
                             <WorkToolIcon label='JQuery' />
@@ -50,8 +50,8 @@ const WorkPage = () => {
                             <ItemTitleSub>Junior Software Engineer</ItemTitleSub>
                             <ItemTitleSub>Graduate Software Engineer</ItemTitleSub>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Build, design, test, and ship high-quality features for a web-based LMS (Learning Management System) used by schools and educational institutions.</p>
+                        <p>Worked across the full technology stack, focusing on building optimised React components and hooks that powered the application&apos;s frontend, while also implementing core domain logic and designing efficient GraphQL APIs on the backend.</p>
                         <WorkTools>
                             <WorkToolIcon label='JavaScript' />
                             <WorkToolIcon label='TypeScript' />

@@ -106,7 +106,7 @@ const AboutPage = () => {
                     I enjoyed my job, the unique blend of creativity and logic that goes into our work was very fascinating to me.
                     But over time, I found myself getting too comfortable with my routine and life in NZ. Wanting a new challenge,
                     I started exploring opportunities overseas—and eventually landed in Sydney, where I currently live.
-                    During this time I also picked up golf, which, along with my software career, has become the main pursuits in my life.
+                    During this time I also picked up golf, which, along with my software career, has become my main pursuits currently.
                 </p>
             </PageSection>
             <PageSection>

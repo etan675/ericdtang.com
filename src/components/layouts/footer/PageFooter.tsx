@@ -30,20 +30,22 @@ const PageFooter = ({ className = '' }: Props) => {
                     <FooterTitle>Read Next:</FooterTitle>
                     {nextPage && (
                         <LinkText
-                            href={`/${nextPage.path}`}
+                            href={nextPage.path}
                             className='text-indigo-300'
                         >
                             {nextPage.label} &rarr;
                         </LinkText>
                     )}
-                    <LinkText
-                        href='/blog'
-                        className='text-indigo-300'
-                    >
-                        Blog &rarr;
-                    </LinkText>
+                    {rootRoute !== 'blog' && (
+                        <LinkText
+                            href='/blog'
+                            className='text-indigo-300'
+                        >
+                            Blog &rarr;
+                        </LinkText>
+                    )}
                 </div>
-                <FooterColDiv/>
+                <FooterColDiv />
                 <div className='flex flex-col'>
                     <FooterTitle>Contact Info:</FooterTitle>
                     <div className='flex flex-wrap gap-[0.5em]'>
@@ -70,7 +72,7 @@ const PageFooter = ({ className = '' }: Props) => {
                         </LinkText>
                     </div>
                 </div>
-                <FooterColDiv/>
+                <FooterColDiv />
                 <div className='flex flex-col'>
                     <FooterTitle>Tech Stack & Design:</FooterTitle>
                     <ul className='list-disc pl-[1em]'>
@@ -110,15 +112,15 @@ type NextPage = {
 const getNextPage = (curr: string): NextPage | null => {
     switch (curr) {
         case (''):
-            return { label: 'About me', path: 'about' }
+            return { label: 'About me', path: '/about' }
         case ('about'):
-            return { label: 'My work experience', path: 'work' }
+            return { label: 'Work experience', path: '/work' }
         case ('work'):
-            return { label: 'My side projects', path: 'projects' }
+            return { label: 'Side projects', path: '/projects' }
         case ('projects'):
             return null
         case ('blog'):
-            return { label: 'Back to home', path: '' }
+            return { label: 'Back to home', path: '/' }
         default:
             return null
     }
