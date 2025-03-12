@@ -3,23 +3,23 @@ import Link from 'next/link';
 import React from 'react';
 
 type Props = Readonly<{
-    children: React.ReactNode,
     href: string,
+    children: React.ReactNode,
     className?: string,
-    target?: string
 }>;
 
-const LinkText = ({ href, children, className = '', target = '' }: Props) => {
+type AnchorProps = React.AnchorHTMLAttributes<HTMLAnchorElement>
+
+const LinkText = (props: AnchorProps & Props) => {
     return (
         <Link
-            href={href}
             className={classNames(
                 'text-[var(--secondary)] hover:underline',
-                className
+                props.className
             )}
-            target={target}
+            {...props}
         >
-            {children}
+            {props.children}
         </Link>
     )
 };

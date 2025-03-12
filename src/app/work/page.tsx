@@ -9,6 +9,7 @@ import ItemTitleSub from '@/components/work/ItemTitleSub';
 import WorkToolIcon from '@/components/work/WorkToolIcon';
 import WorkTools from '@/components/work/WorkTools';
 import WorkDateLabel from '@/components/work/WorkDateLabel';
+import LinkText from '@/components/LinkText';
 
 const WorkPage = () => {
     return (
@@ -19,7 +20,7 @@ const WorkPage = () => {
                     <WorkDateLabel start='May 25' end='Sep 25' />
                     <WorkItem>
                         <div>
-                            <ItemTitleLink 
+                            <ItemTitleLink
                                 href='https://www.mathsonline.com.au/'
                                 title='MathsOnline'
                             />
@@ -66,6 +67,24 @@ const WorkPage = () => {
                         </WorkTools>
                     </WorkItem>
                 </WorkGrid>
+            </PageSection>
+            <PageSection>
+                <PageHeading>Resume</PageHeading>
+                <div className='flex flex-col items-start'>
+                    <LinkText
+                        href='/assets/eric-resume.pdf'
+                        target='_blank'
+                    >
+                        View in browser
+                    </LinkText>
+                    <LinkText
+                        href='/assets/eric-resume.pdf'
+                        target='_blank'
+                        download
+                    >
+                        Download
+                    </LinkText>
+                </div>
             </PageSection>
         </PageContentContainer>
     )
