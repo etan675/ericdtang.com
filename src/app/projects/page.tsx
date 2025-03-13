@@ -20,8 +20,8 @@ const ProjectsPage = () => {
                     <ProjectItem
                         title='Personal Website'
                         subTitle='2025'
-                        link='abc'
-                        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.'
+                        link='https://github.com/etan675/my-website'
+                        description='The source of this website. A space for some digital self-expression.'
                         tools={['Next.js', 'TypeScript', 'Tailwind CSS']}
                     />
                     <ProjectItem
@@ -29,7 +29,7 @@ const ProjectsPage = () => {
                         subTitle='2024'
                         link='https://github.com/etan675/task-zen'
                         appLink='https://task-zen-o9q1.onrender.com/'
-                        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.'
+                        description='A full stack task tracking app, built as a learning project to revise web fundamentals.'
                         tools={['JavaScript', 'HTML', 'SCSS', 'Node.js', 'TypeScript', 'Express.js', 'PostgreSQL']}
                     />
                     <ProjectItem
@@ -37,7 +37,7 @@ const ProjectsPage = () => {
                         subTitle='2024'
                         link='https://github.com/etan675/tracker-gg'
                         appLink='https://trackergg.vercel.app/'
-                        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.'
+                        description='Game-stats analysis website for League of Legends, inspired by OP.GG.'
                         tools={['Next.js', 'TypeScript', 'Tailwind CSS', 'Riot Games API']}
                     />
                     <ProjectItem
@@ -45,14 +45,14 @@ const ProjectsPage = () => {
                         subTitle='2024'
                         link='https://github.com/etan675/chess'
                         appLink='https://etan675.github.io/chess/'
-                        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.'
+                        description='Fun little challenge implementing the game of chess from scratch. '
                         tools={['React', 'JavaScript', 'Tailwind CSS']}
                     />
                     <ProjectItem
                         title='Kindle Manga Guide'
                         subTitle='2024'
                         link='https://github.com/etan675/manga-folder-helper'
-                        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.'
+                        description='Full steps for downloading online manga onto your kindle e-reader. Includes a small CLI tool that helps make the process much easier.'
                         tools={['Python']}
                     />
                 </ProjectGrid>
