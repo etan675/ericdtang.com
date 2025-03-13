@@ -62,7 +62,7 @@ const tools = {
         icon: <CSSIcon />
     },
     TW: {
-        name: 'Tailwind',
+        name: 'Tailwind CSS',
         icon: <TailwindIcon />
     },
     LARAVEL: {

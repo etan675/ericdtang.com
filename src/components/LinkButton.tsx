@@ -1,14 +1,24 @@
 import classNames from 'classnames';
 import Link from 'next/link';
 import React from 'react';
+import RightUpArrow from './svg-components/RightUpArrow';
 
 type Props = Readonly<{
     href: string,
     children: React.ReactNode
     className?: string,
+    external?: boolean
 }>;
 
-const LinkButton = ({ href, children, className = '' }: Props) => {
+type AnchorProps = React.AnchorHTMLAttributes<HTMLAnchorElement>
+
+const LinkButton = ({
+    href,
+    children,
+    className = '',
+    external = false,
+    ...restProps
+}: AnchorProps & Props) => {
     return (
         <Link
             href={href}
@@ -20,8 +30,12 @@ const LinkButton = ({ href, children, className = '' }: Props) => {
                 'before:border-transparent before:transition-all hover:before:border-[var(--secondary)]',
                 className
             )}
+            {...restProps}
         >
             {children}
+            {external && (
+                <RightUpArrow className='inline ml-1 w-[1em] h-[1em] stroke-current' />
+            )}
         </Link>
     )
 };

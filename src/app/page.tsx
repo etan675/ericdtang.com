@@ -16,7 +16,7 @@ const Home = () => {
             For the past 3 years, I&apos;ve been developing web apps using JavaScript,
             PHP, and &#8203;
           </span>
-          <LinkText href='/about#tools'>related technologies</LinkText>
+          <LinkText className='text-[var(--secondary)]' href='/about#tools'>related technologies</LinkText>
           . My goal in tech is to build quality software that both empowers people and can stand the test of time.
         </div>
         <p>
@@ -27,7 +27,7 @@ const Home = () => {
         <p>
           This website is an overview of who I am. Here I will share my story, talk about things
           I&apos;m interested in, and showcase some of my &#8203;
-          <LinkText href='/projects'>projects</LinkText>
+          <LinkText className='text-[var(--secondary)]' href='/projects'>projects</LinkText>
           . Welcome!
         </p>
         <LinkButton className='mt-2' href="/about">More about me</LinkButton>

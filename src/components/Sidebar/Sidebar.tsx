@@ -37,6 +37,7 @@ const Sidebar = ({ className = '' }: Props) => {
                         <div className='grid grid-cols-[min-content_1fr] grid-rows-3 gap-1'>
                             <EmailIcon className='w-[1.5em] h-[1.5em] items-center justify-self-center' />
                             <LinkText
+                                className='text-[var(--secondary)] '
                                 href='mailto:erictang1201@gmail.com'
                                 target='_blank'
                             >
@@ -44,6 +45,7 @@ const Sidebar = ({ className = '' }: Props) => {
                             </LinkText>
                             <LinkedInIcon className='w-[1.5em] h-[1.5em] items-center justify-self-center' />
                             <LinkText
+                                className='text-[var(--secondary)] '
                                 href='https://linkedin.com/in/eric-tang99'
                                 target='_blank'
                             >
@@ -51,6 +53,7 @@ const Sidebar = ({ className = '' }: Props) => {
                             </LinkText>
                             <GithubIcon className='w-[1.2em] h-[1.2em] items-center justify-self-center' fill='#d1d1d1' />
                             <LinkText
+                                className='text-[var(--secondary)] '
                                 href='https://github.com/etan675'
                                 target='_blank'
                             >

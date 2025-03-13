@@ -1,14 +1,14 @@
 import PageContentContainer from '@/components/layouts/PageContentContainer';
 import PageHeading from '@/components/layouts/PageHeading';
 import PageSection from '@/components/layouts/PageSection';
-import WorkGrid from '@/components/work/WorkGrid';
-import WorkItem from '@/components/work/WorkItem';
-import ItemTitleLink from '@/components/work/ItemTitleLink';
+import WorkGrid from '@/components/work-page/WorkGrid';
+import WorkItem from '@/components/work-page/WorkItem';
+import ItemTitleLink from '@/components/work-page/ItemTitleLink';
 import React from 'react';
-import ItemTitleSub from '@/components/work/ItemTitleSub';
-import WorkToolIcon from '@/components/work/WorkToolIcon';
-import WorkTools from '@/components/work/WorkTools';
-import WorkDateLabel from '@/components/work/WorkDateLabel';
+import ItemTitleSub from '@/components/work-page/ItemTitleSub';
+import WorkToolIcon from '@/components/work-page/WorkToolIcon';
+import WorkTools from '@/components/work-page/WorkTools';
+import WorkDateLabel from '@/components/work-page/WorkDateLabel';
 import LinkText from '@/components/LinkText';
 import { Metadata } from 'next';
 
@@ -77,12 +77,14 @@ const WorkPage = () => {
                 <PageHeading>Resume</PageHeading>
                 <div className='flex flex-col items-start'>
                     <LinkText
+                        className='text-[var(--secondary)] '
                         href='/assets/eric-resume-01-2025.pdf'
                         target='_blank'
                     >
                         View in browser
                     </LinkText>
                     <LinkText
+                        className='text-[var(--secondary)] '
                         href='/assets/eric-resume-01-2025.pdf'
                         target='_blank'
                         download
