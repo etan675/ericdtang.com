@@ -3,11 +3,10 @@ import PageHeading from '@/components/layouts/PageHeading';
 import PageSection from '@/components/layouts/PageSection';
 import WorkGrid from '@/components/work-page/WorkGrid';
 import WorkItem from '@/components/work-page/WorkItem';
-import ItemTitleLink from '@/components/work-page/ItemTitleLink';
 import React from 'react';
 import ItemTitleSub from '@/components/work-page/ItemTitleSub';
-import WorkToolIcon from '@/components/work-page/WorkToolIcon';
 import WorkTools from '@/components/work-page/WorkTools';
+import ToolLabel from '@/components/ToolLabel';
 import WorkDateLabel from '@/components/work-page/WorkDateLabel';
 import LinkText from '@/components/LinkText';
 import { Metadata } from 'next';
@@ -25,33 +24,41 @@ const WorkPage = () => {
                     <WorkDateLabel start='May 24' end='Sep 24' />
                     <WorkItem>
                         <div>
-                            <ItemTitleLink
+                            <LinkText 
+                                className='text-[var(--foreground)] text-xl font-semibold'
                                 href='https://www.mathsonline.com.au/'
-                                title='MathsOnline'
-                            />
+                                target='_blank'
+                                external
+                            >
+                                MathsOnline
+                            </LinkText>
                             <ItemTitleSub>Software Engineer</ItemTitleSub>
                         </div>
                         <p>Worked on an online educational platform. Developed in-house solutions to support technical infrastructure, including a custom SDK for integrating internal apps with a popular CRM system.</p>
                         <p>Primarily focusing on backend development, applied architectural design patterns to refactor and decouple backend layers for a robust and future-proof system.</p>
                         <WorkTools>
-                            <WorkToolIcon label='JavaScript' />
-                            <WorkToolIcon label='JQuery' />
-                            <WorkToolIcon label='HTML & CSS' />
-                            <WorkToolIcon label='PHP' />
-                            <WorkToolIcon label='Laravel' />
-                            <WorkToolIcon label='CodeIgniter' />
-                            <WorkToolIcon label='MySQL' />
-                            <WorkToolIcon label='REST APIs' />
-                            <WorkToolIcon label='PHPUnit' />
+                            <ToolLabel label='JavaScript' />
+                            <ToolLabel label='JQuery' />
+                            <ToolLabel label='HTML & CSS' />
+                            <ToolLabel label='PHP' />
+                            <ToolLabel label='Laravel' />
+                            <ToolLabel label='CodeIgniter' />
+                            <ToolLabel label='MySQL' />
+                            <ToolLabel label='REST APIs' />
+                            <ToolLabel label='PHPUnit' />
                         </WorkTools>
                     </WorkItem>
                     <WorkDateLabel start='Jan 22' end='Apr 24' />
                     <WorkItem>
                         <div>
-                            <ItemTitleLink
+                            <LinkText 
+                                className='text-[var(--foreground)] text-xl font-semibold'
                                 href='https://www.writerstoolbox.com/'
-                                title="Writer's Toolbox"
-                            />
+                                target='_blank'
+                                external
+                            >
+                                Writer&apos;s Toolbox
+                            </LinkText>
                             <ItemTitleSub>Software Engineer</ItemTitleSub>
                             <ItemTitleSub>Junior Software Engineer</ItemTitleSub>
                             <ItemTitleSub>Graduate Software Engineer</ItemTitleSub>
@@ -59,16 +66,16 @@ const WorkPage = () => {
                         <p>Build, design, test, and ship high-quality features for a web-based LMS (Learning Management System) used by schools and educational institutions.</p>
                         <p>Worked across the full technology stack, focusing on building optimised React components and hooks that powered the application&apos;s frontend, while also implementing core domain logic and designing efficient GraphQL APIs on the backend.</p>
                         <WorkTools>
-                            <WorkToolIcon label='JavaScript' />
-                            <WorkToolIcon label='TypeScript' />
-                            <WorkToolIcon label='React' />
-                            <WorkToolIcon label='Emotion CSS' />
-                            <WorkToolIcon label='Node.js' />
-                            <WorkToolIcon label='PHP' />
-                            <WorkToolIcon label='SilverStripe CMS' />
-                            <WorkToolIcon label='Apollo GraphQL Client' />
-                            <WorkToolIcon label='MySQL' />
-                            <WorkToolIcon label='PHPUnit' />
+                            <ToolLabel label='JavaScript' />
+                            <ToolLabel label='TypeScript' />
+                            <ToolLabel label='React' />
+                            <ToolLabel label='Emotion CSS' />
+                            <ToolLabel label='Node.js' />
+                            <ToolLabel label='PHP' />
+                            <ToolLabel label='SilverStripe CMS' />
+                            <ToolLabel label='Apollo GraphQL Client' />
+                            <ToolLabel label='MySQL' />
+                            <ToolLabel label='PHPUnit' />
                         </WorkTools>
                     </WorkItem>
                 </WorkGrid>
