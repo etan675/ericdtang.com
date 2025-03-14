@@ -36,14 +36,6 @@ const PageFooter = ({ className = '' }: Props) => {
                             {nextPage.label} &rarr;
                         </LinkText>
                     )}
-                    {rootRoute !== 'blog' && (
-                        <LinkText
-                            href='/blog'
-                            className='text-indigo-300'
-                        >
-                            Blog &rarr;
-                        </LinkText>
-                    )}
                 </div>
                 <FooterColDiv />
                 <div className='flex flex-col'>
@@ -118,8 +110,6 @@ const getNextPage = (curr: string): NextPage | null => {
         case ('work'):
             return { label: 'Side projects', path: '/projects' }
         case ('projects'):
-            return null
-        case ('blog'):
             return { label: 'Back to home', path: '/' }
         default:
             return null

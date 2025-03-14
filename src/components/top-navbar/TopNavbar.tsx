@@ -50,12 +50,6 @@ const TopNavbar = ({ className = '' }: Props) => {
                     >
                         Projects
                     </NavbarLink>
-                    <NavbarLink 
-                        href='/blog'
-                        isActive={rootRoute === 'blog'}
-                    >
-                        Blog
-                    </NavbarLink>
                     <Link href='https://github.com/etan675' target='_blank'>
                         <GithubIcon className='w-[1.2em] h-[1.2em]' fill='#939393'/>
                     </Link>
