@@ -22,7 +22,7 @@ const ProjectsPage = () => {
                         subTitle='2025'
                         link='https://github.com/etan675/my-website'
                         description='The source of this website. A space for some digital self-expression.'
-                        tools={['Next.js', 'TypeScript', 'Tailwind CSS']}
+                        tools={['TypeScript', 'Next.js', 'Tailwind CSS']}
                     />
                     <ProjectItem
                         title='TaskZen'
@@ -38,15 +38,15 @@ const ProjectsPage = () => {
                         link='https://github.com/etan675/tracker-gg'
                         appLink='https://trackergg.vercel.app/'
                         description='Game-stats analysis website for League of Legends, inspired by OP.GG.'
-                        tools={['Next.js', 'TypeScript', 'Tailwind CSS', 'Riot Games API']}
+                        tools={['TypeScript', 'Next.js', 'Tailwind CSS', 'Riot Games API']}
                     />
                     <ProjectItem
                         title='Chess'
                         subTitle='2024'
                         link='https://github.com/etan675/chess'
                         appLink='https://etan675.github.io/chess/'
-                        description='Fun little challenge implementing the game of chess from scratch. '
-                        tools={['React', 'JavaScript', 'Tailwind CSS']}
+                        description='Web-based chess game, a fun little challenge implementing the game of chess from scratch.'
+                        tools={['JavaScript', 'React', 'Tailwind CSS']}
                     />
                     <ProjectItem
                         title='Kindle Manga Guide'

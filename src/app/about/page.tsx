@@ -42,8 +42,8 @@ const AboutPage = () => {
                 <PageHeading>What I&apos;m doing now</PageHeading>
                 <p className='italic'>March 5, 2025</p>
                 <ul className='list-disc pl-[1em]'>
-                    <li>Working on this website</li>
                     <li>Looking for new career opportunities</li>
+                    <li>Working on this website</li>
                     <li>Playing golf</li>
                     <li>Playing tennis</li>
                 </ul>
@@ -91,27 +91,26 @@ const AboutPage = () => {
                 <p>
                     I was born and raise in Auckland, New Zealand. After finishing high school in 2017, I took a gap year to
                     work part-time, save money, and explore new hobbies while figuring out my next steps. Toward the 
-                    end of 2018, I took off on a working holiday in Japan to experience snow at the world
-                    famous Niseko ski resort. There I rediscovered my childhood passion for snowboarding, and spent
+                    end of 2018, I took off on a working holiday in Japan to experience snow at the world-famous
+                    Niseko ski resort. There I rediscovered my childhood passion for snowboarding, and spent
                     an unforgettable few months hitting the mountains and meeting cool people from around the world.
                 </p>
                 <p>
-                    I returned to NZ with a new plan: become a snowboard instructor and travel the world. My next
-                    destination was Canada, while waiting for the next winter season, I decided to focus on my
-                    education and enrolled at University of Auckland, studying Computer Science and Psychology.
+                    I returned to NZ with a new plan: becoming a snowboard instructor and travelling the world. 
+                    So, while waiting for the next winter season, I decided to focus on my education and enrolled at 
+                    University of Auckland, studying Computer Science and Psychology.
                 </p>
                 <p>
-                    An eventful two semesters later, it was time to pack up for the next trip. However, this was
-                    when COVID hit, and it seemed like my travel plans would have to be put on hold, so my focus
+                    An eventful two semesters went by, and it was time to pack up for the next trip. However, COVID hit, and it seemed like my travel plans would have to be put on hold, so my focus
                     shifted entirely to my studies. Fast-forward 2 years, I graduated and joined Writer&apos;s Toolbox
-                    in early 2022 as a graduate software engineer, where I learned the ins and outs of web development 
+                    in early 2022 as a grad software engineer, where I learned the ins and outs of web development 
                     from a group of talented and personable engineers.
                 </p>
                 <p>
-                    I enjoyed my job, the unique blend of creativity and logic that goes into our work was very fascinating to me.
+                    I enjoyed my job, the unique blend of creativity and logic that went into our work was very fascinating to me.
                     But over time, I found myself getting too comfortable with my routine and life in NZ. Wanting a new challenge,
-                    I started exploring opportunities overseas—and eventually landed in Sydney, where I currently live.
-                    During this time I also picked up golf, which, along with my software career, has become my main pursuits currently.
+                    I started exploring opportunities overseas and eventually landed in Sydney, where I currently live.
+                    During this time I also picked up golf, which, along with my software career, are my main pursuits currently.
                 </p>
             </PageSection>
             <PageSection>
@@ -122,10 +121,10 @@ const AboutPage = () => {
                     <li>
                         <p className='font-bold'>Equipment: </p>
                         <ul className='list-disc pl-[1em]'>
-                            <li><span className='font-bold'>Driver, 3 wood, 3 hybrid: </span>Ping G430 Max (R)</li>
-                            <li><span className='font-bold'>Irons: </span>TaylorMade P790 (4 - PW) (S)</li>
-                            <li><span className='font-bold'>Wedges: </span>TaylorMade MG4 (50°/9b, 54°/11b, 58°/11b)</li>
-                            <li><span className='font-bold'>Putter: </span>Titleist Scotty Cameron Phantom X 5.5</li>
+                            <li><span className='font-bold'>Driver, 3 wood, 3 hybrid: </span>Ping G430 Max</li>
+                            <li><span className='font-bold'>Irons: </span>TaylorMade P790 (4 - PW)</li>
+                            <li><span className='font-bold'>Wedges: </span>TaylorMade MG4 (50°, 54°, 58°)</li>
+                            <li><span className='font-bold'>Putter: </span>Scotty Cameron Phantom X 5.5</li>
                         </ul>
                     </li>
                 </ul>
