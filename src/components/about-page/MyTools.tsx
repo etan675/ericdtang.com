@@ -103,7 +103,7 @@ const MyTools = ({ className = '' }: Props) => {
                 content={
                     <TooltipContent>
                         <p className='font-semibold'>Experience: 1 year</p>
-                        <p>A power framework built on top of React and Node.js for building fast and scalable web apps. It focuses extensively on performance optimisations and developer experience, with features like server-side rendering (improved SEO), static site generation (faster load times), declarative routing, and more.</p>
+                        <p>A powerful framework built on top of React and Node.js for building fast and scalable web apps. It focuses extensively on performance optimisations and developer experience, with features like server-side rendering (improved SEO), static site generation (faster load times), declarative routing, and more.</p>
                     </TooltipContent>
                 }
             >
@@ -173,7 +173,7 @@ const MyTools = ({ className = '' }: Props) => {
                 className='relative'
                 content={
                     <TooltipContent>
-                        <p className='font-semibold'>Experience: 3 years</p>
+                        <p className='font-semibold'>Experience: 2 years</p>
                         <p>A relational database management system (RDBMS), or just SQL database. Widely used for its performance and speed, reliability, and integration with web technologies.</p>
                     </TooltipContent>
                 }
