@@ -34,8 +34,8 @@ const WorkPage = () => {
                             </LinkText>
                             <ItemTitleSub>Software Engineer</ItemTitleSub>
                         </div>
-                        <p>Worked on an online educational platform. Developed in-house solutions to support technical infrastructure, including a custom SDK for integrating internal apps with a popular CRM system.</p>
-                        <p>Primarily focusing on backend development, applied architectural design patterns to refactor and decouple backend layers for a robust and future-proof system.</p>
+                        <p>Worked on an online educational platform. Developed in-house solutions to support technical infrastructure, including a custom SDK for integrating a popular CRM system with internal apps.</p>
+                        <p>Primarily focused on backend development, implementing logic for new features and maintaining existing code across core services, APIs, and databases.</p>
                         <WorkTools>
                             <ToolLabel label='JavaScript' />
                             <ToolLabel label='JQuery' />
