@@ -17,19 +17,21 @@
   
   --text-secondary: #C2C2C2;
   --text-tertiary: #919191;
+
+  --light-sun: #ffd479;
 }
 
-@media (prefers-color-scheme: dark) {
+::selection {
+  background-color: var(--secondary);
+  color: var(--foreground);
+}
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #1F1F1F;
     --foreground: #F9F9F9;
   }
-
-  ::selection {
-    background-color: var(--secondary);
-    color: var(--foreground);
-  }
-}
+} */
 
 * {
 	margin: 0;
@@ -43,10 +45,5 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
-
-  color: var(--foreground);
-  background: var(--background);
   font-family: var(--font-geist-sans);
 }

@@ -4,6 +4,8 @@ import "./globals.css";
 import TopNavbar from "@/components/top-navbar/TopNavbar";
 import Sidebar from "@/components/sidebar/Sidebar";
 import PageLayout from "@/components/layouts/PageLayout";
+import ThemeProvider from "@/context-provider/ThemeProvider";
+import classNames from "classnames";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,14 +29,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-y-hidden flex`}
-      >
-        <TopNavbar/>
-        <Sidebar className="basis-[20%] shrink-0" />
-        <PageLayout>
-          {children}
-        </PageLayout>
+      <body>
+        <ThemeProvider>
+          <div className={classNames(
+            `${geistSans.variable} ${geistMono.variable}`,
+            'antialiased flex w-screen h-screen overflow-y-hidden',
+            'text-[var(--foreground)] bg-[var(--background)] font-[var(--font-geist-sans)]',
+          )}>
+            <TopNavbar />
+            <Sidebar className="basis-[20%] shrink-0" />
+            <PageLayout>
+              {children}
+            </PageLayout>
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );

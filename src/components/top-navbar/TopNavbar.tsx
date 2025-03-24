@@ -7,6 +7,7 @@ import Link from 'next/link';
 import GithubIcon from '../svg-components/GithubIcon';
 import classNames from 'classnames';
 import LinkIcon from '../LinkIcon';
+// import ThemeToggleButton from '../ThemeToggleButton';
 
 type Props = Readonly<{
     className?: string,
@@ -51,6 +52,15 @@ const TopNavbar = ({ className = '' }: Props) => {
                     >
                         Projects
                     </NavbarLink>
+                    {/* <div className='flex gap-4 items-center ml-2'>
+                        <ThemeToggleButton className='w-[1.2em] h-[1.2em]' />
+                        <LinkIcon
+                            href='https://github.com/etan675'
+                            target='_blank'
+                        >
+                            <GithubIcon className='w-[1.2em] h-[1.2em] fill-[#939393]' />
+                        </LinkIcon>
+                    </div> */}
                     <LinkIcon
                         href='https://github.com/etan675'
                         target='_blank'
