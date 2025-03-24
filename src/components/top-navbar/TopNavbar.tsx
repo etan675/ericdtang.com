@@ -6,6 +6,7 @@ import NavbarLink from './NavbarLink';
 import Link from 'next/link';
 import GithubIcon from '../svg-components/GithubIcon';
 import classNames from 'classnames';
+import LinkIcon from '../LinkIcon';
 
 type Props = Readonly<{
     className?: string,
@@ -14,7 +15,7 @@ type Props = Readonly<{
 const TopNavbar = ({ className = '' }: Props) => {
     const pathname = usePathname();
     const rootRoute = pathname.split('/')[1];
-    
+
     return (
         <header className={classNames(
             'flex flex-col px-12 py-6 text-xl font-semibold w-screen',
@@ -23,36 +24,39 @@ const TopNavbar = ({ className = '' }: Props) => {
         )}>
             <div className='flex justify-between'>
                 <Link href='/' className='hover:underline hover:decoration-solid cursor-pointer'>
-                    Eric Tang
+                    Eric Tang&nbsp;
                 </Link>
                 <div className='flex gap-6 items-center'>
-                    <NavbarLink 
-                        href='/' 
+                    <NavbarLink
+                        href='/'
                         isActive={rootRoute === ''}
                     >
                         Home
                     </NavbarLink>
-                    <NavbarLink 
-                        href='/about' 
+                    <NavbarLink
+                        href='/about'
                         isActive={rootRoute === 'about'}
                     >
                         About
                     </NavbarLink>
-                    <NavbarLink 
-                        href='/work' 
+                    <NavbarLink
+                        href='/work'
                         isActive={rootRoute === 'work'}
                     >
                         Work
                     </NavbarLink>
-                    <NavbarLink 
-                        href='/projects' 
+                    <NavbarLink
+                        href='/projects'
                         isActive={rootRoute === 'projects'}
                     >
                         Projects
                     </NavbarLink>
-                    <Link href='https://github.com/etan675' target='_blank'>
-                        <GithubIcon className='w-[1.2em] h-[1.2em]' fill='#939393'/>
-                    </Link>
+                    <LinkIcon
+                        href='https://github.com/etan675'
+                        target='_blank'
+                    >
+                        <GithubIcon className='w-[1.2em] h-[1.2em] fill-[#939393]' />
+                    </LinkIcon>
                 </div>
             </div>
         </header>
