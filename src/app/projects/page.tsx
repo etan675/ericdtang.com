@@ -20,7 +20,7 @@ const ProjectsPage = () => {
                     <ProjectItem
                         title='Personal Website'
                         subTitle='2025'
-                        link='https://github.com/etan675/my-website'
+                        link='https://github.com/etan675/ericdtang.com'
                         description='The source of this website. A space for some digital self-expression.'
                         tools={['TypeScript', 'Next.js', 'Tailwind CSS']}
                     />

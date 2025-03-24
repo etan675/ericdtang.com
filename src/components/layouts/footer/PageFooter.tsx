@@ -72,7 +72,7 @@ const PageFooter = ({ className = '' }: Props) => {
                             <span>Built with Next.js, React, and Tailwind - </span>
                             <LinkText
                                 className='text-slate-50'
-                                href='https://github.com/etan675/my-website'
+                                href='https://github.com/etan675/ericdtang.com'
                                 target='_blank'
                             >
                                 Source
