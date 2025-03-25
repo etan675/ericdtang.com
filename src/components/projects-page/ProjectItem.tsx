@@ -25,7 +25,7 @@ const ProjectItem = ({
 }: Props) => {
     return (
         <div className={classNames(
-            'bg-zinc-900 max-w-96 p-4 flex flex-col gap-4 rounded-lg',
+            'dark:bg-zinc-900 bg-zinc-200 max-w-96 p-4 flex flex-col gap-4 rounded-lg',
             className
         )}>
             <div>

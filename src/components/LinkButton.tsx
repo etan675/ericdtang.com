@@ -23,7 +23,7 @@ const LinkButton = ({
         <Link
             href={href}
             className={classNames(
-                'w-fit text-base font-medium text-[var(--foreground)] bg-[#2E2E2E]',
+                'w-fit text-base font-medium text-[var(--foreground)] dark:bg-[#2E2E2E]',
                 'py-2 px-4 rounded-lg border border-stone-600',
                 'hover:text-[var(--secondary)] hover:border-[var(--secondary)] transition-all',
                 'relative before:absolute before:inset-[-2px] before:border-2 before:rounded-lg',

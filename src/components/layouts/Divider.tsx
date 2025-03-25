@@ -8,7 +8,7 @@ type Props = Readonly<{
 const Divider = ({ className = '' }: Props) => {
     return (
         <div className={classNames(
-            'border-b border-gray-600 w-full my-4',
+            'border-b dark:border-gray-600 border-gray-300 w-full my-4',
             className
         )}></div>
     )

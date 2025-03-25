@@ -61,7 +61,7 @@ const IntroSection = ({ className = '' }: Props) => {
                 endless stream of new information, and since we must continuously learn and adapt to stay effective,
                 it is easy to feel lost. I find that having a few&nbsp;
                 <span
-                    className='cursor-pointer text-[var(--secondary)] hover:underline'
+                    className='cursor-pointer text-[var(--secondary)] font-semibold dark:font-[inherit] hover:underline'
                     onClick={highLightText}
                 >
                     core values

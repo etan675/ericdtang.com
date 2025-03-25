@@ -21,43 +21,69 @@ const ThemeToggleButton = ({ className = '', }: Props) => {
 
     const { theme, setTheme } = themeContext;
 
+    // toggle order: dark -> light -> system
+    const nextTheme = getThemeType(theme).next;
+
     const toggleTheme = () => {
-        setTheme(getNextTheme(theme));
+        setTheme(nextTheme);
     }
 
     return (
         <button
             className={classNames(
-                { 'rounded-md bg-black p-1 scale-[1.2]': getNextTheme(theme) === THEME_DARK },
+                { 'rounded-md bg-black p-1 scale-[1.2]': nextTheme === THEME_DARK },
                 className
             )}
-            title={`switch to ${getNextTheme(theme)} theme`}
+            title={`switch to ${getThemeType(nextTheme).label}`}
             onClick={toggleTheme}
         >
-            {getNextTheme(theme) === THEME_DARK && (
-                <DarkIcon className='w-full h-full fill-slate-50 hover:fill-[var(--secondary-light)]' />
+            {nextTheme === THEME_DARK && (
+                <DarkIcon className='w-full h-full fill-slate-50 hover:fill-[var(--secondary)]' />
             )}
-            {getNextTheme(theme) === THEME_LIGHT && (
+            {nextTheme === THEME_LIGHT && (
                 <LightIcon className='w-full h-full fill-slate-50 scale-[1.3] translate-y-[1px] hover:fill-[var(--light-sun)]' />
             )}
-            {getNextTheme(theme) === THEME_SYSTEM && (
+            {nextTheme === THEME_SYSTEM && (
                 <ComputerIcon className='w-full h-full scale-[1.05] translate-y-[1px] fill-gray-500 hover:fill-[var(--secondary)]' />
             )}
         </button>
     )
 };
 
-// order: dark -> light -> system
-const getNextTheme = (theme: string) => {
+type ThemeType = {
+    type: string,
+    next: string,
+    label: string,
+}
+
+const getThemeType = (theme: string): ThemeType => {
+    let themeType: ThemeType = {
+        type: THEME_SYSTEM,
+        next: THEME_DARK,
+        label: 'system theme'
+    };
+
     switch (theme) {
         case (THEME_DARK):
-            return THEME_LIGHT;  
+            themeType = {
+                type: THEME_DARK,
+                next: THEME_LIGHT,
+                label: 'dark theme'
+            };
+
+            return themeType;
+
         case (THEME_LIGHT):
-            return THEME_SYSTEM;  
-        case (THEME_SYSTEM):
-            return THEME_DARK;
+            themeType = {
+                type: THEME_LIGHT,
+                next: THEME_SYSTEM,
+                label: 'light theme'
+            };
+
+            return themeType;
+
         default:
-            return THEME_SYSTEM;  
+            return themeType;
     }
 }
 

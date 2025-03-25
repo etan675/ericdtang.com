@@ -24,7 +24,7 @@ const LinkText = ({
         <Link
             href={href}
             className={classNames(
-                'hover:underline group',
+                'hover:underline group font-semibold dark:font-normal',
                 className
             )}
             {...restProps}

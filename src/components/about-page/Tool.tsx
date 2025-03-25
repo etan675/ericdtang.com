@@ -21,7 +21,7 @@ type Props = Readonly<{
 const Tool = ({ className = '', type }: Props) => {
     return (
         <div className={classNames(
-            'flex items-center gap-2 px-3 py-4 bg-slate-900 rounded-md',
+            'flex items-center gap-2 px-3 py-4 dark:bg-slate-900 bg-slate-200 rounded-md',
             '[&>svg]:w-8 [&>svg]:h-8 [&>svg]:flex-shrink-0',
             'cursor-pointer border border-transparent hover:border-[var(--secondary)] transition-all',
             className
@@ -51,11 +51,11 @@ const tools = {
     },
     NODE: {
         name: 'Node.js',
-        icon: <NodeIcon className='bg-[#dedede] rounded px-[2px]' />
+        icon: <NodeIcon className='dark:bg-[#dedede] bg-slate-50 rounded px-[2px]' />
     },
     NEXT_JS: {
         name: 'Next.js',
-        icon: <NextJSIcon />
+        icon: <NextJSIcon className='fill-current' />
     },
     CSS: {
         name: 'CSS/SCSS',

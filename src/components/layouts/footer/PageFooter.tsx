@@ -31,7 +31,7 @@ const PageFooter = ({ className = '' }: Props) => {
                     {nextPage && (
                         <LinkText
                             href={nextPage.path}
-                            className='text-indigo-300'
+                            className='text-[var(--secondary-light)]'
                         >
                             {nextPage.label} &rarr;
                         </LinkText>
@@ -44,21 +44,21 @@ const PageFooter = ({ className = '' }: Props) => {
                         <LinkText
                             href='mailto:erictang1201@gmail.com'
                             target='_blank'
-                            className='text-slate-50'
+                            className='dark:text-[var(--foreground)]'
                         >
                             Email
                         </LinkText>|
                         <LinkText
                             href='https://linkedin.com/in/eric-tang99'
                             target='_blank'
-                            className='text-slate-50'
+                            className='dark:text-[var(--foreground)]'
                         >
                             LinkedIn
                         </LinkText>|
                         <LinkText
                             href='https://github.com/etan675'
                             target='_blank'
-                            className='text-slate-50'
+                            className='dark:text-[var(--foreground)]'
                         >
                             GitHub
                         </LinkText>
@@ -71,7 +71,7 @@ const PageFooter = ({ className = '' }: Props) => {
                         <li>
                             <span>Built with Next.js, React, and Tailwind - </span>
                             <LinkText
-                                className='text-slate-50'
+                                className='dark:text-[var(--foreground)]'
                                 href='https://github.com/etan675/ericdtang.com'
                                 target='_blank'
                             >
@@ -81,7 +81,7 @@ const PageFooter = ({ className = '' }: Props) => {
                         <li>
                             <span>Design inspired by </span>
                             <LinkText
-                                className='text-slate-50'
+                                className='dark:text-[var(--foreground)]'
                                 href='https://www.taniarascia.com/'
                                 target='_blank'
                             >

@@ -61,12 +61,12 @@ const TooltipButton = ({
                 >
                     <div
                         style={{ ...transitionStyles }}
-                        className='bg-[var(--foreground)] text-[var(--background)] rounded-md p-4 min-w-12'
+                        className='bg-white text-black rounded-md p-4 min-w-12 shadow-md'
                     >
                         <FloatingArrow
                             ref={arrowRef}
                             context={context}
-                            className='fill-[var(--foreground)]'
+                            className='fill-white'
                         />
                         {content}
                     </div>

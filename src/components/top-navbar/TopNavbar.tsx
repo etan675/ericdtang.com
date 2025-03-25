@@ -7,7 +7,7 @@ import Link from 'next/link';
 import GithubIcon from '../svg-components/GithubIcon';
 import classNames from 'classnames';
 import LinkIcon from '../LinkIcon';
-// import ThemeToggleButton from '../ThemeToggleButton';
+import ThemeToggleButton from '../ThemeToggleButton';
 
 type Props = Readonly<{
     className?: string,
@@ -19,8 +19,9 @@ const TopNavbar = ({ className = '' }: Props) => {
 
     return (
         <header className={classNames(
-            'flex flex-col px-12 py-6 text-xl font-semibold w-screen',
-            'fixed top-0 left-0 bg-black bg-opacity-20 z-50 backdrop-blur-md border-b border-gray-600',
+            'flex flex-col px-12 py-6 text-xl font-semibold w-screen z-50 fixed top-0 left-0',
+            'border-b dark:bg-black bg-gray-300 dark:border-gray-600 border-gray-300',
+            'bg-opacity-20 dark:bg-opacity-20 backdrop-blur-md dark:backdrop-blur-md',
             className
         )}>
             <div className='flex justify-between'>
@@ -52,7 +53,7 @@ const TopNavbar = ({ className = '' }: Props) => {
                     >
                         Projects
                     </NavbarLink>
-                    {/* <div className='flex gap-4 items-center ml-2'>
+                    <div className='flex gap-4 items-center ml-2'>
                         <ThemeToggleButton className='w-[1.2em] h-[1.2em]' />
                         <LinkIcon
                             href='https://github.com/etan675'
@@ -60,13 +61,7 @@ const TopNavbar = ({ className = '' }: Props) => {
                         >
                             <GithubIcon className='w-[1.2em] h-[1.2em] fill-[#939393]' />
                         </LinkIcon>
-                    </div> */}
-                    <LinkIcon
-                        href='https://github.com/etan675'
-                        target='_blank'
-                    >
-                        <GithubIcon className='w-[1.2em] h-[1.2em] fill-[#939393]' />
-                    </LinkIcon>
+                    </div>
                 </div>
             </div>
         </header>

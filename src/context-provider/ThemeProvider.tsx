@@ -21,17 +21,16 @@ const ThemeProvider = ({ children }: Props) => {
 
     useEffect(() => {
         if (theme === THEME_LIGHT) {
-            // give 'light' class to html to enable tailwind selector
-            document.documentElement.classList.add('light');
+            applyLight();
 
         } else if (theme === THEME_DARK) {
-            document.documentElement.classList.remove('light');
+            applyDark();
 
         } else if (theme === THEME_SYSTEM) {
             if (systemPrefersLight()) {
-                document.documentElement.classList.add('light');
+                applyLight();
             } else {
-                document.documentElement.classList.remove('light');
+                applyDark();
             }
         } else {
             throw new Error('unknown theme');
@@ -41,7 +40,20 @@ const ThemeProvider = ({ children }: Props) => {
     }, [theme]);
 
     const systemPrefersLight = () => {
+        // Handles css media query for system preference.
         return window.matchMedia('(prefers-color-scheme: light)').matches;
+    }
+
+    const applyLight = () => {
+        // Toggle custom tailwind variant classes on root to apply the theme.
+        // @see globals.css 
+        document.documentElement.classList.add('light');
+        document.documentElement.classList.remove('dark');
+    }
+
+    const applyDark = () => {
+        document.documentElement.classList.add('dark');
+        document.documentElement.classList.remove('light');
     }
 
     return mounted ? (

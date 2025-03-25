@@ -15,7 +15,7 @@ type Props = Readonly<{
 const Sidebar = ({ className = '' }: Props) => {
     return (
         <div className={classNames(
-            'min-w-[300px] flex flex-col items-end bg-[#272727] overflow-auto',
+            'min-w-[300px] flex flex-col items-end bg-[var(--sidebar-bg)] overflow-auto',
             className
         )}>
             <Content className='w-72 flex flex-col gap-4 px-8'>
@@ -37,7 +37,7 @@ const Sidebar = ({ className = '' }: Props) => {
                         <div className='grid grid-cols-[min-content_1fr] grid-rows-3 gap-1'>
                             <EmailIcon className='w-[1.5em] h-[1.5em] items-center justify-self-center' />
                             <LinkText
-                                className='text-[var(--secondary)] '
+                                className='text-[var(--secondary)]'
                                 href='mailto:erictang1201@gmail.com'
                                 target='_blank'
                             >
@@ -64,7 +64,7 @@ const Sidebar = ({ className = '' }: Props) => {
                 </SidebarSection>
                 <Divider/>
                 <SidebarSection>
-                    <p>
+                    <p className='text-[var(--text-tertiary)]'>
                         <q className='italic'>Simplicity is the ultimate sophistication.</q>&nbsp;
                         <span> - </span> 
                         <span className='text-sm'>Leonardo da Vinci</span> 

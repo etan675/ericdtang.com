@@ -12,7 +12,7 @@ const ToolLabel = ({ className = '', label }: Props) => {
             'bg-indigo-400/10 rounded-full flex justify-center items-center py-[0.5em] px-[1em] text-base',
             className
         )}>
-            <span className='text-[var(--secondary-light)]'>
+            <span className='text-[var(--secondary-light)] font-semibold dark:font-normal'>
                 {label}
             </span>
         </div>

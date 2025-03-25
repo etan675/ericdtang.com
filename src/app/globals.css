@@ -2,14 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+NOTE:
+Since the app was initially designed in dark theme and tailwind only supports 
+the use of 'dark:' variant with its utility classes, future dark theme specific
+styles need the 'dark:' selector, while for light theme specific styles simply 
+use regular tailwind classes.
+*/
+
+/* enables the use of the built in 'dark:' selector for tw classes */
+/* https://tailwindcss.com/docs/dark-mode */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* custom '.light' class that controls light theme, defined below */
+@custom-variant light (&:where(.light, .light *));
+
+
 :root {
+  /* default styles are dark theme */
   --background: #1F1F1F;
   --foreground: #F9F9F9;
 
-  /* similar to tailwind indigo-400 */
+  /* same as indigo-400 */
   --secondary: #818cf8;
-  /* soft contrast */
-  --secondary-soft: #ac9cdb;
   /* high contrast with above indigo */
   --secondary-contrast: #B8860B;
   /* lighter version */
@@ -19,19 +34,24 @@
   --text-tertiary: #919191;
 
   --light-sun: #ffd479;
+
+  --sidebar-bg: #272727;
 }
 
-::selection {
-  background-color: var(--secondary);
-  color: var(--foreground);
-}
+/* light theme globals */
+.light {
+  --background: #F9F9F9;
+  --foreground: #000;
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #1F1F1F;
-    --foreground: #F9F9F9;
-  }
-} */
+  /* darker shade of original indigo */
+  --secondary: #7583ff;
+  --secondary-light: #818cf8;
+
+  --text-secondary: #3a3a3a;
+  --text-tertiary: #646464;
+
+  --sidebar-bg: #f0f0f0;
+}
 
 * {
 	margin: 0;
