@@ -59,7 +59,7 @@ const TopNavbar = ({ className = '' }: Props) => {
                             href='https://github.com/etan675'
                             target='_blank'
                         >
-                            <GithubIcon className='w-[1.2em] h-[1.2em] fill-[#939393]' />
+                            <GithubIcon className='w-[1.2em] h-[1.2em] dark:fill-[#939393] fill-black' />
                         </LinkIcon>
                     </div>
                 </div>

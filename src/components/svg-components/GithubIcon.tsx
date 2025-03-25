@@ -2,12 +2,11 @@ import React from 'react';
 
 type Props = Readonly<{
     className?: string,
-    fill?: string
 }>;
 
-const GithubIcon = ({ className = '', fill = '#fff' }: Props) => {
+const GithubIcon = ({ className = '' }: Props) => {
     return (
-        <svg className={className} fill={fill} width="64px" height="64px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)">
+        <svg className={className} width="64px" height="64px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)">
             <g id="SVGRepo_bgCarrier" strokeWidth="0" />
             <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
             <g id="SVGRepo_iconCarrier">
