@@ -114,7 +114,7 @@ const TopNavbar = ({ className = '' }: Props) => {
                 <div
                     className={classNames(
                         'w-full absolute left-0 top-[calc(100%_+_1px)] z-50',
-                        'bg-[#1d1d1d] border-b dark:border-gray-600 border-gray-300',
+                        'dark:bg-[#1d1d1d] bg-gray-50 border-b dark:border-gray-600 border-gray-300',
                         'flex flex-col justify-center items-center gap-4 p-8',
                     )}
                     ref={ref as RefObject<HTMLDivElement | null>}
