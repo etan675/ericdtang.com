@@ -7,9 +7,16 @@ type Props = Readonly<{
     children: React.ReactNode
     className?: string,
     isActive?: boolean
+    onClick?: () => void
 }>;
 
-const NavbarLink = ({ href, children, className = '', isActive = false }: Props) => {
+const NavbarLink = ({
+    href,
+    children,
+    className = '',
+    isActive = false,
+    onClick = () => {},
+}: Props) => {
     return (
         <Link
             href={href}
@@ -18,6 +25,7 @@ const NavbarLink = ({ href, children, className = '', isActive = false }: Props)
                 { 'text-[var(--secondary)]': isActive },
                 className
             )}
+            onClick={onClick}
         >
             {children}
         </Link>
