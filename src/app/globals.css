@@ -6,8 +6,8 @@
 NOTE:
 Since the app was initially designed in dark theme and tailwind only supports 
 the use of 'dark:' variant with its utility classes, future dark theme specific
-styles need the 'dark:' selector, while for light theme specific styles simply 
-use regular tailwind classes.
+styles need the 'dark:' selector, while for light theme style simply use regular
+tailwind classes.
 */
 
 /* enables the use of the built in 'dark:' selector for tw classes */

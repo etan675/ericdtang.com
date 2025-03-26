@@ -37,7 +37,7 @@ export default function RootLayout({
             'text-[var(--foreground)] bg-[var(--background)] font-[var(--font-geist-sans)]',
           )}>
             <TopNavbar />
-            <Sidebar className="basis-[20%] shrink-0" />
+            <Sidebar className="basis-[20%] shrink-0 max-lg:hidden" />
             <PageLayout>
               {children}
             </PageLayout>
