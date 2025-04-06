@@ -73,7 +73,7 @@ const WorkPage = () => {
                             <ToolLabel label='Node.js' />
                             <ToolLabel label='PHP' />
                             <ToolLabel label='SilverStripe CMS' />
-                            <ToolLabel label='Apollo GraphQL Client' />
+                            <ToolLabel label='GraphQL' />
                             <ToolLabel label='MySQL' />
                             <ToolLabel label='PHPUnit' />
                         </WorkTools>
