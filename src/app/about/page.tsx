@@ -118,15 +118,6 @@ const AboutPage = () => {
                 <ul className='list-disc pl-[1em]'>
                     <li><span className='font-bold'>Current handicap:</span> 11</li>
                     <li><span className='font-bold'>Best score:</span> 77 (+6)</li>
-                    <li>
-                        <p className='font-bold'>Equipment: </p>
-                        <ul className='list-disc pl-[1em]'>
-                            <li><span className='font-bold'>Driver, 3 wood, 3 hybrid: </span>Ping G430 Max</li>
-                            <li><span className='font-bold'>Irons: </span>TaylorMade P790 (4 - PW)</li>
-                            <li><span className='font-bold'>Wedges: </span>TaylorMade MG4 (50°, 54°, 58°)</li>
-                            <li><span className='font-bold'>Putter: </span>Scotty Cameron Phantom X 5.5</li>
-                        </ul>
-                    </li>
                 </ul>
             </PageSection>
         </PageContentContainer>
