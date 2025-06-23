@@ -21,7 +21,23 @@ const WorkPage = () => {
             <PageSection>
                 <PageHeading>Work Experience</PageHeading>
                 <WorkGrid>
-                    <WorkDateLabel start='May 24' end='Sep 24' />
+                    <WorkDateLabel start='Jan 25' end='Present' />
+                    <WorkItem>
+                        <div>
+                            <p className='text-[var(--foreground)] text-xl font-semibold dark:font-normal'>
+                                Self-Employed
+                            </p>
+                            <ItemTitleSub>Freelance Web Developer</ItemTitleSub>
+                        </div>
+                        <p>Building custom web solutions for clients, such as internal management tools for small businesses, Stripe integrations for SaaS payments, and translating Figma designs into responsive UIs.</p>
+                        <WorkTools>
+                            <ToolLabel label='Laravel' />
+                            <ToolLabel label='Next.js' />
+                            <ToolLabel label='Stripe Integrations' />
+                            <ToolLabel label='Web design' />
+                        </WorkTools>
+                    </WorkItem>
+                    <WorkDateLabel start='Apr 24' end='Sep 24' />
                     <WorkItem>
                         <div>
                             <LinkText 
