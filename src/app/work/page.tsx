@@ -21,7 +21,33 @@ const WorkPage = () => {
             <PageSection>
                 <PageHeading>Work Experience</PageHeading>
                 <WorkGrid>
-                    <WorkDateLabel start='Jan 25' end='Present' />
+                    <WorkDateLabel start='Aug 25' end='Present' />
+                    <WorkItem>
+                        <div>
+                            <LinkText
+                                className='text-[var(--foreground)] text-xl font-semibold'
+                                href='https://learnosity.com/'
+                                target='_blank'
+                                external
+                            >
+                                Learnosity
+                            </LinkText>
+                            <ItemTitleSub>Software Engineer</ItemTitleSub>
+                        </div>
+                        <p>Continuing the EdTech trend in my career, my role at Learnosity focuses on developing and maintaining our suite of powerful and hyper-scalable assessment delivery APIs and AI-powered learning solutions.</p>
+                        <WorkTools>
+                            <ToolLabel label='JavaScript (ES6)' />
+                            <ToolLabel label='TypeScript' />
+                            <ToolLabel label='React' />
+                            <ToolLabel label='Redux' />
+                            <ToolLabel label='PHP' />
+                            <ToolLabel label='Symfony' />
+                            <ToolLabel label='Docker' />
+                            <ToolLabel label='AWS' />
+                            <ToolLabel label='AI' />
+                        </WorkTools>
+                    </WorkItem>
+                    <WorkDateLabel start='Jan 25' end='Aug 25' />
                     <WorkItem>
                         <div>
                             <p className='text-[var(--foreground)] text-xl font-semibold dark:font-normal'>
@@ -40,7 +66,7 @@ const WorkPage = () => {
                     <WorkDateLabel start='Apr 24' end='Sep 24' />
                     <WorkItem>
                         <div>
-                            <LinkText 
+                            <LinkText
                                 className='text-[var(--foreground)] text-xl font-semibold'
                                 href='https://www.mathsonline.com.au/'
                                 target='_blank'
@@ -50,8 +76,9 @@ const WorkPage = () => {
                             </LinkText>
                             <ItemTitleSub>Software Engineer</ItemTitleSub>
                         </div>
-                        <p>Worked on an online educational platform. Developed in-house solutions to support technical infrastructure, including a custom SDK for integrating a popular CRM with internal apps.</p>
-                        <p>Primarily focused on backend development, implementing logic for new features and maintaining existing code across core services, APIs, and databases.</p>
+                        <p>Worked on MathsOnline&apos;s digital math learning platform.</p>
+                        <p>Notable projects included developing an SDK for integrations with Keap&apos;s CRM, providing a way for us to easily interact with our CRM from server side, as well as building a scalable testing library that helped our engineers write maintainable unit/integration tests.</p>
+                        <p>Though I was only here for a short time, I got to work with an amazing team and gained some extremely valuable experience.</p>
                         <WorkTools>
                             <ToolLabel label='JavaScript' />
                             <ToolLabel label='JQuery' />
@@ -60,14 +87,14 @@ const WorkPage = () => {
                             <ToolLabel label='Laravel' />
                             <ToolLabel label='CodeIgniter' />
                             <ToolLabel label='MySQL' />
-                            <ToolLabel label='REST APIs' />
+                            <ToolLabel label='API Development (REST)' />
                             <ToolLabel label='PHPUnit' />
                         </WorkTools>
                     </WorkItem>
                     <WorkDateLabel start='Jan 22' end='Apr 24' />
                     <WorkItem>
                         <div>
-                            <LinkText 
+                            <LinkText
                                 className='text-[var(--foreground)] text-xl font-semibold'
                                 href='https://www.writerstoolbox.com/'
                                 target='_blank'
@@ -79,8 +106,9 @@ const WorkPage = () => {
                             <ItemTitleSub>Junior Software Engineer</ItemTitleSub>
                             <ItemTitleSub>Graduate Software Engineer</ItemTitleSub>
                         </div>
-                        <p>Build, design, test, and ship high-quality features for a web-based LMS (Learning Management System) used by schools and educational institutions.</p>
-                        <p>Worked across the full technology stack, focusing on building optimised React components and hooks that powered the application&apos;s frontend, while also implementing core domain logic and designing efficient GraphQL APIs on the backend.</p>
+                        <p>Full stack engineer developing and maintaining the Writer&apos;s Toolbox LMS.</p>
+                        <p>Started as a grad, working across product design, code implementation, testing, and deployments in an agile environment.</p>
+                        <p>I quickly reached a mid level position in my team, where I led R&D for major infrastructure upgrades such as migrating parts of the backend to microservices and implementing data warehousing pipelines.</p>
                         <WorkTools>
                             <ToolLabel label='JavaScript' />
                             <ToolLabel label='TypeScript' />
